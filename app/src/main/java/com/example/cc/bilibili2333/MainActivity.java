@@ -13,10 +13,10 @@ public class MainActivity extends BaseActivity {
 //        MutilColorTextView m_test = (MutilColorTextView) findViewById(R.id.test);
 //        m_test.setDivideColor(Color.BLUE," : ");
 //        测试1();
-        测试test();
+        测试2333();
     }
 
-    private void 测试test() {
+    private void 测试2333() {
 
     }
 
