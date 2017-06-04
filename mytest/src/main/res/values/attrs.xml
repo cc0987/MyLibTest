@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--************************test***************************-->
+    <attr name="textSize0" format="dimension" />
+    <declare-styleable name="button1">
+        <attr name="textSize1" format="dimension" />
+        <attr name="textSize2" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="button2">
+        <attr name="textSize3" format="dimension" />
+        <attr name="textSize4" format="dimension" />
+    </declare-styleable>
+    <!--*************************test***************************-->
+    <declare-styleable name="MutilColorTextView">
+        <attr name="color" format="color" />
+        <attr name="divideString" format="string" />
+        <attr name="textSize" format="integer" />
+    </declare-styleable>
+</resources>
