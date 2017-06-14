@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="test" />
+    <array name="test" >
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+        <item>test1</item>
+    </array>
 </resources>

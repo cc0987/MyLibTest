@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_pay_state_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:onClick="onClick"
+    android:orientation="vertical"
+    tools:context=".SelectPayStateDialog">
+
+    <LinearLayout
+        android:padding="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:background="@drawable/my_order_spinner_bg"
+            android:divider="@drawable/divide"
+            android:entries="@array/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ListView
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/my_order_spinner_bg"
+            android:divider="@drawable/divide"
+            android:entries="@array/test2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<TextView
+            android:tag="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_order_spinner_bg_top"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="30px"
+            android:textSize="32px"
+            android:text="未支付" />
+
+        <TextView
+            android:tag="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_order_spinner_bg_middle"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="30px"
+            android:textSize="32px"
+            android:text="待支付" />
+
+        <TextView
+            android:tag="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_order_spinner_bg_bottom"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="30px"
+            android:textSize="32px"
+            android:text="已支付" />
+
+        <TextView
+            android:id="@+id/select_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_order_spinner_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="30px"
+            android:textSize="32px"
+            android:text="取消" />-->
+    </LinearLayout>
+</RelativeLayout>

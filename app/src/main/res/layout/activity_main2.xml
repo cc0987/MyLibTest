@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normalBgColor"
+    tools:context=".Main2Activity">
+
+    <FrameLayout
+        android:id="@+id/order_detail_fl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionHeight"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/order_detail_back"
+            android:layout_width="@dimen/actionHeight"
+            android:layout_height="match_parent"
+            android:padding="25px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/actionTextSize" />
+
+    </FrameLayout>
+
+    <!--*********start******************************************-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_detail_fl2"
+        android:layout_below="@id/order_detail_fl1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divide"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/order_title"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:paddingLeft="60px"
+                android:text="货主抢单中，等待承运方选择"
+                android:textColor="@color/colorBlack"
+                android:textSize="32px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="15px">
+
+                <TextView
+                    android:id="@+id/order_fromaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    android:text="北京市北京市东城区高新区"
+                    android:textColor="@color/colorFocusTrue"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="始发地"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/order_toaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    android:text="北京市北京市东城区高新区"
+                    android:textColor="@color/colorFocusTrue"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="目的地"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/order_carTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    android:text="货车时间：%s → %s"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text="货源信息"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/order_detail_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:lineSpacingExtra="@dimen/detail_padding"
+                android:paddingBottom="@dimen/detail_padding"
+                android:paddingLeft="60px"
+                android:paddingTop="@dimen/detail_padding"
+                android:text="货物名称：\t%s\n货物品类：\t%s\n货物类型：\t%s\n货物规格：\t%s\n需要车长：\t%s\n需要车型：\t%s\n温度要求：\t%s\n支付方式：\t%s\n价格        ：\t%s\n提供发票：\t%s\n到货时间：\t%s\n联系电话：\t%s\n备注        ：\t%s"
+                android:textColor="@color/colorBlack"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text="承运方信息"
+                android:textSize="30px" />
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="15px">
+
+                <TextView
+                    android:id="@+id/order_fromaddr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    android:text="江苏省苏州市"
+                    android:textColor="@color/colorFocusTrue"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="始发地"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/order_toaddr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="15px"
+                    android:text="浙江省杭州市"
+                    android:textColor="@color/colorFocusTrue"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="目的地"
+                    android:textSize="30px" />
+            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/order_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="@dimen/detail_padding"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/detail_padding"
+                android:padding="@dimen/detail_padding"
+                android:text="承运方：%s\n联系电话：%s"
+                android:textColor="@color/colorBlack"
+                android:textSize="30px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--********end*******************************************-->
+
+    <FrameLayout
+        android:id="@+id/order_detail_fl2"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normalBgColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/normalLineColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90px"
+            android:text="电话联系"
+            android:textColor="#c14700"
+            android:textSize="40px" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/order_detail_change_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20px"
+            android:paddingBottom="15px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:paddingTop="15px"
+            android:text="修改价格"
+            android:textColor="@color/colorFocusTrue"
+            android:textSize="30px" />
+    </FrameLayout>
+
+</RelativeLayout>

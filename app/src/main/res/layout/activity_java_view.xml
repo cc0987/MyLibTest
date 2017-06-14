@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_java_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normalBgColor"
+    tools:context="com.example.cc.bilibili2333.JavaViewActivity">
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:text="title"
+            android:textSize="36px"
+            android:padding="20px"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_linear"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+        <LinearLayout
+            android:id="@+id/view_linear"
+            android:showDividers="middle|beginning|end"
+            android:divider="@drawable/divide"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+    <FrameLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/view_frame2"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <View
+            android:background="@color/normalLineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <TextView
+            android:text="$123"
+            android:textSize="36px"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
